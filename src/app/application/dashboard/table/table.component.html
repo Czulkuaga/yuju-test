@@ -1,0 +1,76 @@
+<div class="row mx-2">
+    <table class="table table-hover rounded-top">
+        <thead>
+          <tr class="table-dark">
+            <th scope="col">
+                <input type="checkbox" name="" id="" disabled>
+            </th>
+            <th scope="col" class="text-info">Fecha</th>
+            <th scope="col" class="text-info">ID Pedido</th>
+            <th scope="col" class="text-info"># Items</th>
+            <th scope="col" class="text-info">Envío/Carrito</th>
+            <th scope="col" class="text-info">Cliente</th>
+            <th scope="col" class="text-info">Monto</th>
+            <th scope="col" class="text-info">Marca</th>
+            <th scope="col" class="text-info">Estado</th>
+            <th scope="col" class="text-info">Progreso</th>
+            <th scope="col" class="text-info">Facturación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let sale of sales">
+            <td>
+                <div class="ml-2 d-flex justify-content-center align-items-center">
+                    <input type="checkbox" name="index">
+                    <div class="d-flex justify-content-center align-items-center ml-2">
+                        <img class="mr-2" width="20px" height="20px" src="../../../../assets/img/dashboard/sales_icon_table_user.png" alt="">
+                        <img width="25px" height="25px" src="../../../../assets/img/dashboard/mercadolibre.png" alt="">
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="ml-2 d-flex flex-column justify-content-center align-items-center">
+                    <span>{{sale.payment_accredited_at | date:'dd/mm/yy hh:mm'}}</span>
+                </div>
+            </td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center"><span class="text-info">{{sale.id_order}}</span></div>
+            </td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center"><span class="text-info">{{sale.no_items}}</span></div>
+            </td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center"><span>{{sale.shipment_pk}}</span></div>
+            </td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center"><span>{{sale.customer_name}}</span></div>
+            </td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center"><span>{{sale.total | currency}}</span></div>
+            </td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center"><span>{{sale.brands}}</span></div>
+            </td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center"><span>{{sale.status}}</span></div>
+            </td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center"><span>{{sale.last_notified_progress}}</span></div>
+            </td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center"><span>{{sale.invoice_status}}</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="w-100 d-flex justify-content-end">
+        <span>Página 1-2 | Resultados por página</span>
+            <div class="d-flex pagination-style-item ml-2">
+                <span><a class="text-info">20</a></span>
+                <span class="text-secondary">|</span>
+                <span><a class="text-info">50</a></span>
+                <span class="text-secondary">|</span>
+                <span><a class="text-info">100</a></span>
+            </div>
+      </div>
+</div>

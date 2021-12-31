@@ -1,0 +1,123 @@
+<app-nav></app-nav>
+<div class="row ml-2 mr-1 my-3">
+    <div class="col-9 d-flex justify-content-start align-items-center">
+        <span class="mr-3">Buscar</span>
+        <input class="w-50 border border-secondary rounded-pill py-2 pl-3" type="search" name="search" id="search" placeholder="Buscar por ID pedidos, ID shipment, SKU...">
+        <div>
+            <button type="button" class="btn btn-secondary rounded-circle m-0 px-2 py-0 ml-2" width="12px" height="8px" data-toggle="tooltip" data-placement="bottom" title="Encuentra la información de los pedidos y ventas desde este input">
+                ?
+            </button>
+        </div>
+    </div>
+    <div class="col-3 d-flex justify-content-end align-items-center">
+        <div class="d-flex justify-content-end align-items-center bg-nav-navigation rounded-pill pr-2">
+            <span class="bg-info text-white rounded-pill px-2 py-1">Vistas</span>
+            <div class="d-flex">
+                <a href="#">
+                    <span class="text-info ml-2 mr-2">General</span>
+                </a>
+                <span>|</span>
+                <a href="#">
+                    <span class="text-secondary ml-2">Facturación</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row bg-filter-nav mx-2">
+    <div class="col-6">
+        <a href="#">
+            <button class="btn btn-warning rounded-pill">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icons-search-nav" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                </svg>
+                Filtros
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icons-search-nav" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                    </svg>
+                </span>
+            </button>
+        </a>
+    </div>
+    <div class="col-6 d-flex justify-content-end align-items-center">
+        <div>
+            <span class="text-white bg-warning rounded-pill px-2 mr-1">0</span>
+            <span class="text-white bg-secondary rounded-pill px-2">x</span>
+        </div>
+        <div class="mx-2">
+            |
+        </div>
+        <div class="d-flex justify-content-center align-items-top">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icons-date-nav text-info mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span class="">28-Sep-21 - 28-Oct-21</span>
+        </div>
+    </div>
+</div>
+
+<div class="row mx-2 my-3">
+    <div class="col-6">
+        <div class="d-flex bg-filter-nav container-nav-buttons">
+            <span class="d-flex justify-content-center align-items-center mx-1 bg-btn-dashboard rounded-circle">
+                <img width="30px" height="30px" src="../../../assets/img/dashboard/sales_action_confirmado.png" alt="">
+            </span>
+            <span class="d-flex justify-content-center align-items-center mx-1 bg-btn-dashboard rounded-circle">
+                <img width="30px" height="30px" src="../../../assets/img/dashboard/sales_action_order_venta.png" alt="">
+            </span>
+            <span class="d-flex justify-content-center align-items-center mx-1 bg-btn-dashboard rounded-circle">
+                <img width="30px" height="30px" src="../../../assets/img/dashboard/sales_action_generate_etiqueta.png" alt="">
+            </span>
+            <span class="d-flex justify-content-center align-items-center mx-1 bg-btn-dashboard rounded-circle">
+                <img width="30px" height="30px" src="../../../assets/img/dashboard/sales_print_report.png" alt="">
+            </span>
+            <span class="d-flex justify-content-center align-items-center mx-1 bg-btn-dashboard rounded-circle">
+                <img width="30px" height="30px" src="../../../assets/img/dashboard/sales_create_invoice.png" alt="">
+            </span>
+        </div>
+    </div>
+    <div class="col-6 d-flex justify-content-end">
+        <span class="mr-1">Seleccionado 0 - 28</span>
+        <span>|</span>
+        <span class="d-flex ml-1">
+            <a href="#">
+                <div class="ml-1 mr-2">
+                    <img width="20px" height="20px" src="../../../assets/img/dashboard/left_doble_arrow.png" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <div class="mr-2">
+                    <img width="20px" height="20px" src="../../../assets/img/dashboard/left_arrow_mk.png" alt="">
+                </div>
+            </a>
+        </span>
+        <span>
+            1-2
+        </span>
+        <span class="d-flex">
+            <a href="#">
+                <div class="ml-2 mr-2">
+                    <img width="20px" height="20px" src="../../../assets/img/dashboard/rigth_arrow_mk.png" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <div class="mr-2">
+                    <img width="20px" height="20px" src="../../../assets/img/dashboard/right_doble_arrow.png" alt="">
+                </div>
+            </a>
+        </span>
+        <span>
+            ir a la página
+        </span>
+        <div class="ml-2 mr-1">
+            <input type="number" class="input-pag-nav">
+            <span class="ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-pag-nav" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </span>
+        </div>
+    </div>
+</div>
+<app-table></app-table>
