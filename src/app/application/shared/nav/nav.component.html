@@ -10,7 +10,7 @@
                   </label>
                 </div>
                 <select class="custom-select" id="inputGroupSelect01">
-                  <option *ngFor="let account of accounts" value="{{account.id}}">{{account.name}}</option>
+                  <option *ngFor="let account of account$ | async" value="{{account.id}}">{{account.name}}</option>
                 </select>
               </div>
         </div>
@@ -24,8 +24,8 @@
                     </svg>
                   </label>
                 </div>
-                <select class="custom-select" id="inputGroupSelect01">
-                  <option *ngFor="let shop of shops" value="{{shop.id_shop}}">{{shop.name}}</option>
+                <select class="custom-select" id="inputGroupSelect01" (click)='onChangeSeletor'>
+                  <option value="Shop1">Shop 1</option>
                 </select>
               </div>
         </div>

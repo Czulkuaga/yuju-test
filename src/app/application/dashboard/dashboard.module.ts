@@ -15,7 +15,7 @@ import { TableComponent } from './table/table.component';
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class DashboardModule { }

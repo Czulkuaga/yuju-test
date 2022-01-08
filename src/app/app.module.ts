@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DataService } from './application/shared/service/data.service';
 import { Error404Component } from './error404/error404.component';
 import { InitComponent } from './init/init.component';
 
@@ -14,7 +15,7 @@ import { InitComponent } from './init/init.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
